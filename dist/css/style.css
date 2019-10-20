@@ -1,0 +1,466 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: linear-gradient(rgba(230, 104, 21, 0.639), rgb(230, 104, 21) );
+     height: 126vw;   
+}
+.wrapper{
+ margin-top: 1.6vw;
+ 
+ background-color: rgb(255, 255, 255);
+ 
+}
+.search-bar{
+    background-color: rgb(213, 209, 209);
+    padding:1.2vw
+   
+}
+.logo-holder{
+    margin-left: 3vw;
+}
+.logo{
+    height: 3.2vw;
+    display: block;
+   
+}
+.search{
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.search-field{
+    border:0px;
+    border-radius: 2.4vw;
+    padding-left: 1.6vw !important;
+    height:3.2vw;
+    font-size: 1.1vw;
+   
+ 
+}
+.search-icon{
+    vertical-align: text-top;
+    padding: 0.16vw;
+    font-size : 1.3vw;
+    display: inline-block;
+
+}
+.search-btn{
+    width: 12vw !important;
+    padding-left: 2.4vw;
+    padding-right: 0.8vw;
+    background-color:rgba(230, 104, 21);
+    color:  rgb(213, 209, 209);
+    border-radius: 2.4vw !important;
+    margin-left: -1.6vw;
+    transition: width 0.5s, height 0.5s;
+    font-size: 1vw;
+    padding: 0.32vw;
+    text-transform: uppercase;
+    font-weight: normal;
+
+}
+a:hover{
+    text-decoration: none;
+}
+.search-field:focus, .search-btn:focus{
+    outline: none !important;
+    box-shadow: none;
+    border: 0vw;
+}
+
+.save-likes-btn{
+    border: 0;
+    padding: 0.4vw;
+    color:rgb(213, 209, 209);
+    height: 3.2vw;
+    width: 3.2vw;
+    border-radius: 50%;
+    background-color:rgba(230, 104, 21);
+    display: inline-block;
+    display: none;
+}
+.save-likes-icon{
+    display: inline-block;
+    font-size: 2vw;
+    transition: font-size 0.5s;
+    vertical-align: text-top;
+
+}
+.save-likes-btn:focus{
+    outline:none;
+    border: 0;
+}
+.save-likes-btn:active{
+    transform: translateY(10%);
+}
+
+.search-panel{
+    margin-top: 3.2vw;
+    background-color: rgb(255, 255, 255);
+    height: 115vw;
+    position: relative;
+
+}
+.search-display,.like-display{
+  
+    padding: 1.84vw;
+}
+.search-display:hover,.like-display:hover{
+ 
+    background-color:rgb(213, 209, 209);
+}
+
+.img {
+    width:5.2vw;
+    border-radius: 50%;
+    height: 5.2vw;
+    padding-left: 0px;
+    color:  rgba(230, 104, 21);
+    font-size:0.7vw;
+
+}
+.description{
+    padding-left: 2vw;
+    text-transform: uppercase;
+    font-size: 0.8vw;
+    font-weight: bolder;
+    color: black;
+}
+.recipe-name{
+    margin-bottom: 0.4vw;
+    font-size: 1vw;
+    color: rgba(230, 104, 21);
+}
+.recipe-details{
+    margin-top: 0.4vw; 
+    background-color: rgb(213, 209, 209);
+     position: relative;
+}
+
+
+.button-next-previous{
+     bottom:0.96vw;
+     position: absolute;
+     display:none;
+}
+
+.page-icon{
+  
+    outline: none;
+    font-size:1.5vw;
+    vertical-align: text-top;
+    display:inline-block;
+    
+}
+.page{
+    font-size: 1vw;
+    text-transform: uppercase;
+    padding:0.24vw; 
+    margin-top:0.16vw;
+    background-color:   rgb(213, 209, 209);
+    color: rgba(230, 104, 21);
+    font-weight: bolder;
+    height: 2vw;
+    display:inline-block;
+}
+.page-btn{
+    border-radius: 50%;
+    border:0;
+    background-color: transparent;
+    text-transform: uppercase;
+    color:rgba(230, 104, 21);
+    font-weight: bolder;
+    font-size:1vw;
+    display:inline-block;
+    
+}
+.page-btn:focus{
+    outline:none;
+    border: 0;
+}
+.page-btn:active{
+    transform: translateY(10%);
+}
+.receip-image{
+    width:47vw;
+    height:27vw;
+    display: block; 
+}
+.pics{
+     margin-left:-4.8vw;   
+} 
+.pics-title{
+    text-transform: uppercase;
+    color:rgb(213, 209, 209);
+    background-color:rgba(230, 104, 21);
+    transform: rotate(-5deg);
+    font-size: 1.2vw;
+    font-weight: bolder;
+    margin-top:-3.2vw;
+    padding: 0.7vw;
+}
+.before-ing{
+    margin-top: 4vw;
+    background-color: rgb(235, 233, 233);
+     padding: 1.5vw 1.5vw 1.5vw 1.1vw;
+  
+
+}
+.time{
+    text-transform: uppercase;
+    font-size: 1.0vw;
+    font-weight: bold;
+  
+}
+.watch-icon{
+    color:rgba(230, 104, 21);
+    margin-right: 0.56vw;
+    display: inline-block;
+    font-size: 1.5vw;
+    vertical-align: text-top;
+
+}
+.servings{
+    text-transform: uppercase;
+    font-size: 1.1vw;
+    font-weight: bold;
+  
+}
+.servings-num{
+    padding-right: 0.3vw;
+}
+.man-icon{
+    color:rgba(230, 104, 21);
+    margin-right: 0.3vw;
+    display: inline-block;
+    font-size: 1.5vw;
+    vertical-align: text-top;
+
+}
+.add-minus{
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    padding: 0px;
+    margin-left: 0.7vw;
+}
+.add-icon, .minus-icon{
+    background-color:rgba(230, 104, 21);
+    color:rgb(213, 209, 209);
+    height: 0.8vw;
+    width: 0.8vw;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+.add-minus:focus{
+   outline: none;
+}
+.add-minus:active{
+   transform: translateY(3%);
+ }
+.like-btn{
+    margin-left: auto;
+    border: 0;
+    padding: 0.2vw;
+    color:rgb(213, 209, 209);
+    height: 2.7vw;
+    width: 2.7vw;
+    border-radius: 50%;
+    background-color:rgba(230, 104, 21);
+    
+}
+.like-btn-tog{
+    background-color:rgb(213, 209, 209);
+    color:rgba(230, 104, 21);
+}
+.like-btn-icon{
+    display: inline-block;
+    font-size: 2.0vw;
+    transition: font-size 0.5s;
+    vertical-align: text-top;
+
+}
+.like-btn:focus{
+    outline:none;
+}
+
+.like-btn:active{
+    transform: translateY(5%);
+}
+.ingredient-details{
+    margin-top: 4vw;
+}
+ul{
+    list-style-type: none; 
+    font-size: 1vw;
+    margin-left: 3vw;
+   
+}
+li{
+    padding-bottom: 0.96vw;
+  
+}
+.etc{
+    padding-left:0vw;
+}
+.list-icon{
+    color:rgba(230, 104, 21);
+    padding-right: 0.4vw;
+    display: inline-block;
+    font-size: 1.5vw;
+    vertical-align: text-top;
+}
+.add-shopping-list{
+    position:absolute;
+    bottom: 23vw;  
+}
+.add-sl-btn, .dir-btn {
+    background-color:rgba(230, 104, 21);
+    color:rgb(213, 209, 209);
+    border-radius: 20px;
+    border: 0px;
+    padding: 0.8vw;
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 3.3vw;  
+}
+.add-sl-icon, .dir-icon {  
+    display: inline-block;
+    font-size: 1.5vw;
+    vertical-align: text-top;
+
+
+}
+.add-sl-btn:focus, .dir-btn:focus{
+    outline: none;
+}
+.add-sl-btn:active, .dir-btn:active{
+    transform: translateY(5%);
+}
+.how-to-cook-bg{
+    position: relative;
+    
+}
+.how-to-cook{
+    position:absolute;
+    bottom: 0px;
+    padding:2.4vw;
+    background-color: rgb(235, 233, 233);
+    font-size:1.2vw;
+    display: none;
+    
+}
+.cook-title{
+    text-transform: uppercase;
+    transform: rotate(-5deg);
+    color:rgba(230, 104, 21);
+    padding: 1.1vw;
+    font-weight: bold;
+}
+.cook-details{
+    margin-top: 1.5vw;
+}
+.dir{
+    padding-top: 2.3vw;
+}
+.shopping-list-panel .title{
+    transform: rotate(-5deg);
+    padding: 2vw;
+    color:rgba(230, 104, 21);
+    font-weight: bold;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+  
+}
+.all-shopping-list{
+    margin: 0.55vw 0 0 2.5vw;
+    font-size: 1vw;   
+}
+.count-box-holder{
+    margin-left: 1vw;
+    margin-right: 0vw;
+}
+.count-box{
+    border: 0.08vw solid rgba(230, 104, 21, 0.639);
+    padding: 0.16vw;
+}
+.count{
+    padding: 0px;
+    border:0px;
+    outline: none;
+    background-color: rgb(213, 209, 209);
+}
+.others-sl{
+    font-size:0.9vw;
+    margin: 0px;
+}
+.del-btn-cont{
+   padding-top: 0.23vw;
+   margin-right: -2.5vw;    
+}
+.del-btn{
+    border:0;
+    margin: 0;
+    background-color: transparent;
+    display: none;      
+}
+.del-btn-icon{
+    display: inline-block;
+    font-size: 1.2vw;
+    vertical-align: text-top;
+    color: rgba(230, 104, 21); 
+}
+.del-btn:focus{
+   outline: none;
+   border: 0px;
+}
+.del-btn:active{
+    transform: translateY(5%);
+}
+.shopping-list:hover .del-btn{
+    display: block;
+}
+.shopping-list{
+    padding: 0.8vw;
+    border-bottom: 0.08vw solid  rgb(213, 209, 209);  
+}
+.spinner-grow{
+  height: 5vw;
+  width: 5vw;
+  margin: 2.4vw;
+  color:  rgba(230, 104, 21);
+}
+
+
+
+@media (max-width: 790px) { 
+
+ .page{
+   margin-top: 13px;
+   margin-left: -1vw;
+ }
+ .page-name,.prev,.next{
+     display: none;
+ }
+ .list-icon{
+     display: none;
+ }
+ .count-box-holder{
+     margin-right: -2.3vw;
+     margin-left: 2vw;
+ }
+ ul{
+    list-style-type: circle;
+    color: rgba(230, 104, 21);
+ }
+li{ margin-left: 3vw;}
+
+
+} 
